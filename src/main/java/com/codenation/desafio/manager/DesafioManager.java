@@ -1,7 +1,6 @@
 package com.codenation.desafio.manager;
 
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileOutputStream;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -75,24 +74,6 @@ public class DesafioManager {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-	}
-	
-	/**
-	 * @return retorna o valor do arquivo criado
-	 */
-	public String readFile() {
-		String result = "";
-		try {
-			File file = new File(app.getPath()+File.separator+app.getFileName()+"."+app.getFileExtension());
-			byte[] fileBytes = new byte[(int)file.length()];
-			FileInputStream input = new FileInputStream(file);
-			input.read(fileBytes);
-			input.close();
-			result = new String(fileBytes);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		return result;
 	}
 	
 	/**
