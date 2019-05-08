@@ -14,7 +14,9 @@ No nosso caso os números e pontos serão mantidos, ou seja:
 
 Escrever programa, em qualquer linguagem de programação, que faça uma requisição HTTP para a url abaixo:
 
-``` https://api.codenation.dev/v1/challenge/dev-ps/generate-data?token=SEU_TOKEN ```
+``` 
+https://api.codenation.dev/v1/challenge/dev-ps/generate-data?token=SEU_TOKEN 
+```
 
 O resultado da requisição vai ser um JSON conforme o exemplo:
 
